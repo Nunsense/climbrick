@@ -28,14 +28,14 @@ public class Player : MonoBehaviour {
 		}
 	}
 
-	public void JumpTo(Vector3 target, float force) {
+	public void JumpTo(Vector3 target) {
 		jumpTarget = target;
 		isJumping = true;
-		body.AddForce(Vector3.up * force);
+		body.AddForce(Vector3.up * jumpForce);
 	}
 
 	void OnCollisionEnter(Collision col) {
-		if (col.gameObject.tag == "Step") {
+		if (isJumping && col.gameObject.tag == "Step") {
 			transform.position = jumpTarget;
 			isJumping = false;
 			tower.NextFloor();

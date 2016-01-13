@@ -7,6 +7,7 @@ public class Step : MonoBehaviour {
 	public BoxCollider cube;
 
 	void Awake() {
+		cube = GetComponent<BoxCollider> ();
 		tower = FindObjectOfType<Tower>();
 	}
 

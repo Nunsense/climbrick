@@ -39,7 +39,7 @@ public class Tower : MonoBehaviour {
 
 	public void JumpToStep(Transform trans) {
 		if (Vector3.Distance(player.gameObject.transform.position, trans.position) < 10) {
-			player.JumpTo(trans.position, (trans.position.y - player.gameObject.transform.position.y) * 100);
+			player.JumpTo(trans.position);
 		}		
 	}
 

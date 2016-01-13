@@ -9,6 +9,7 @@ public class CameraController : MonoBehaviour {
 	private bool isMoving = false;
 
 	public void MoveY(float dy) {
+	Debug.Log(dy);
 		movTarget = transform.position;
 		movTarget.y += dy;
 		isMoving = true;
