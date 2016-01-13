@@ -35,7 +35,6 @@ public class Player : MonoBehaviour {
 	}
 
 	void OnCollisionEnter(Collision col) {
-		Debug.Log(col.gameObject.tag);
 		if (col.gameObject.tag == "Step") {
 			transform.position = jumpTarget;
 			isJumping = false;

@@ -22,7 +22,7 @@ public class Tower : MonoBehaviour {
 	}
 
 	void Start() {
-		currentFloor = 0;
+		currentFloor = -1;
 
 		floors = new GameObject[visibleFloors];
 		for (int i = 0; i < visibleFloors; i++) {

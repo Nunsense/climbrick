@@ -7,7 +7,7 @@ public class CameraController : MonoBehaviour {
 	private float currentTime;
 	private Vector3 movTarget;
 	private bool isMoving = false;
-	
+
 	public void MoveY(float dy) {
 		movTarget = transform.position;
 		movTarget.y += dy;
