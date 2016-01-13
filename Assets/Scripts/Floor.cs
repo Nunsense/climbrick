@@ -6,6 +6,7 @@ public class Floor : MonoBehaviour {
 	private Tower tower;
 	private int currentRotation;
 	private static int[] rotations = { 0, 90, 180, 270 };
+	private Quaternion rot;
 
 	//inside class
 	Vector2 firstPressPos;
@@ -17,7 +18,7 @@ public class Floor : MonoBehaviour {
 	}
 
 	void Start() {
-		Quaternion rot = new Quaternion();
+		rot = new Quaternion();
 		currentRotation = rotations[Random.Range(0, rotations.Length)];
 		rot.eulerAngles = new Vector3(0, currentRotation, 0);
 		transform.rotation = rot;
@@ -25,6 +26,7 @@ public class Floor : MonoBehaviour {
 
 	void Update() {
 		KeyboardSwipe();
+		transform.rotation = Quaternion.Lerp (transform.rotation, rot, Time.deltaTime * 15f);
 	}
 
 	public void MobileSwipe() {
@@ -107,9 +109,9 @@ public class Floor : MonoBehaviour {
 	}
 
 	private void Turn(int direction) {
-		Quaternion rot = new Quaternion();
+		rot = new Quaternion();
 		currentRotation = (currentRotation + direction + 1) % (rotations.Length - 1);
 		rot.eulerAngles = new Vector3(0, rotations[currentRotation], 0);
-		transform.rotation = rot;
+		//transform.rotation = rot;
 	}
 }
