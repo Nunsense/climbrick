@@ -109,7 +109,6 @@ public class Floor : MonoBehaviour {
 	private void Turn(int direction) {
 		Quaternion rot = new Quaternion();
 		currentRotation = (currentRotation + direction + 1) % (rotations.Length - 1);
-		Debug.Log(currentRotation);
 		rot.eulerAngles = new Vector3(0, rotations[currentRotation], 0);
 		transform.rotation = rot;
 	}

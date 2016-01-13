@@ -14,16 +14,4 @@ public class Step : MonoBehaviour {
 	void OnMouseDown() {
 		tower.JumpToStep(transform);
 	}
-
-	void OnTriggerEnter(Collider col) {
-		if (col.tag == "Player") {
-			cube.enabled = false;
-		}
-	}
-
-	void OnTriggerExit(Collider col) {
-		if (col.tag == "Player") {
-			cube.enabled = true;
-		}
-	}
 }

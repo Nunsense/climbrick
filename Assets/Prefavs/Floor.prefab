@@ -12,7 +12,7 @@ GameObject:
   - 65: {fileID: 6500264}
   m_Layer: 0
   m_Name: Step (2)
-  m_TagString: Untagged
+  m_TagString: Step
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26,7 +26,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 429698}
   - 33: {fileID: 3301156}
-  - 65: {fileID: 6556544}
   - 23: {fileID: 2356950}
   m_Layer: 0
   m_Name: Cube
@@ -44,7 +43,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 473418}
   - 33: {fileID: 3373282}
-  - 65: {fileID: 6533784}
   - 23: {fileID: 2384106}
   m_Layer: 0
   m_Name: Cube
@@ -65,7 +63,7 @@ GameObject:
   - 65: {fileID: 6583490}
   m_Layer: 0
   m_Name: Step
-  m_TagString: Untagged
+  m_TagString: Step
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100,7 +98,7 @@ GameObject:
   - 65: {fileID: 6521280}
   m_Layer: 0
   m_Name: Step (1)
-  m_TagString: Untagged
+  m_TagString: Step
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -130,7 +128,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 454024}
   - 33: {fileID: 3393354}
-  - 65: {fileID: 6544010}
   - 23: {fileID: 2367672}
   m_Layer: 0
   m_Name: Cube
@@ -194,7 +191,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 168148}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071067}
-  m_LocalPosition: {x: -6, y: 0, z: -2.24}
+  m_LocalPosition: {x: -6, y: 1.36, z: 0.67}
   m_LocalScale: {x: 3, y: 1, z: 2}
   m_Children:
   - {fileID: 454024}
@@ -207,7 +204,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 120368}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: -0.00000016292068}
-  m_LocalPosition: {x: -2.17, y: 0, z: 6}
+  m_LocalPosition: {x: 1.9, y: -1.96, z: 6}
   m_LocalScale: {x: 3, y: 1, z: 2}
   m_Children:
   - {fileID: 473418}
@@ -381,11 +378,11 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 120368}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2, y: 2, z: 1}
-  m_Center: {x: 0, y: -1, z: 0}
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &6521280
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -393,44 +390,8 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 168148}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2, y: 2, z: 1}
-  m_Center: {x: 0, y: -1, z: 0}
---- !u!65 &6533784
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 130116}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!65 &6544010
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 195506}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!65 &6556544
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 121418}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -453,11 +414,11 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 130466}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2, y: 2, z: 1}
-  m_Center: {x: 0, y: -1, z: 0}
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &11410956
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -480,7 +441,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 793eef689035941a5bf121e036fea27b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cube: {fileID: 6556544}
+  cube: {fileID: 0}
 --- !u!114 &11473226
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -492,7 +453,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 793eef689035941a5bf121e036fea27b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cube: {fileID: 6533784}
+  cube: {fileID: 0}
 --- !u!114 &11495822
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -504,7 +465,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 793eef689035941a5bf121e036fea27b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cube: {fileID: 6544010}
+  cube: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -519,6 +480,22 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_TagString
       value: Step
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

@@ -20,8 +20,10 @@ public class Player : MonoBehaviour {
 			Vector3 pos = transform.position;
 			pos.x = Mathf.Lerp(pos.x, jumpTarget.x, Time.deltaTime);
 
-			if (pos.y <= -5) {
-				pos = Vector3.zero;
+			if (body.velocity.y < 0 && pos.y - jumpTarget.y <= 2) {
+				pos.z = -0.1f;
+			} else {
+				pos.z = -5;
 			}
 
 			transform.position = pos;
@@ -29,6 +31,9 @@ public class Player : MonoBehaviour {
 	}
 
 	public void JumpTo(Vector3 target) {
+		if (isJumping)
+			return;
+
 		jumpTarget = target;
 		isJumping = true;
 		body.AddForce(Vector3.up * jumpForce);
@@ -36,7 +41,6 @@ public class Player : MonoBehaviour {
 
 	void OnCollisionEnter(Collision col) {
 		if (isJumping && col.gameObject.tag == "Step") {
-			transform.position = jumpTarget;
 			isJumping = false;
 			tower.NextFloor();
 		}

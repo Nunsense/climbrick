@@ -34,7 +34,6 @@ public class Tower : MonoBehaviour {
 	}
 
 	void Update() {
-		
 	}
 
 	public void JumpToStep(Transform trans) {
@@ -46,5 +45,15 @@ public class Tower : MonoBehaviour {
 	public void NextFloor() {
 		currentFloor++;
 		cam.MoveY(floorH * currentFloor);
+
+		floors[fixIndex(currentFloor - 2)].transform.localPosition = new Vector3(0, fixIndex(currentFloor + 3) * floorH, 0);
+	}
+
+	private int fixIndex(int i) {
+	Debug.Log(i);
+		if (i < 0) i = floors.Length - i;
+		if (i > floors.Length - 1) i = i - (floors.Length - 1);
+		Debug.Log(i);
+		return i;
 	}
 }
